@@ -1,0 +1,12 @@
+Field	Type	Null	Key	Default	Extra
+id	bigint	NO	PRI	NULL	auto_increment
+account_number	varchar(20)	NO	UNI	NULL	
+account_status	enum('ACTIVE','CLOSED','FROZEN','INACTIVE')	NO		NULL	
+account_type	enum('CURRENT','SAVINGS')	NO		NULL	
+balance	bigint	NO		NULL	
+branch_name	varchar(100)	NO		NULL	
+closed_at	datetime(6)	YES		NULL	
+currency	varchar(10)	NO		NULL	
+ifsc_code	varchar(11)	NO		NULL	
+opened_at	datetime(6)	YES		NULL	
+user_id	bigint	NO	MUL	NULL	

@@ -1,0 +1,5 @@
+id	email	password	status	role
+5	gsravankumarjmd@gmail.com	$2a$10$XlXqq0YM.6XbVuEELd7aQuNak9MXhaaCf2HhkHFAsSL/mI05m5oyq	APPROVED	ADMIN
+6	gurramsravankr@gmail.com	$2a$10$XlXqq0YM.6XbVuEELd7aQuNak9MXhaaCf2HhkHFAsSL/mI05m5oyq	APPROVED	USER
+7	admintest@skbank.com	$2a$10$XlXqq0YM.6XbVuEELd7aQuNak9MXhaaCf2HhkHFAsSL/mI05m5oyq	APPROVED	ADMIN
+8	dummy@example.com	$2a$10$XlXqq0YM.6XbVuEELd7aQuNak9MXhaaCf2HhkHFAsSL/mI05m5oyq	PENDING	USER

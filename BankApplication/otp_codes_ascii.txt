@@ -1,0 +1,2 @@
+id	destination	expires_at	otp_code	purpose	verified
+11	gurrramsravankr@gmail.com	2026-07-08 09:52:18.572869	203302	EMAIL_VERIFICATION	\0

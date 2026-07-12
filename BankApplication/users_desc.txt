@@ -1,0 +1,25 @@
+Field	Type	Null	Key	Default	Extra
+id	bigint	NO	PRI	NULL	auto_increment
+aadhaar_number	varchar(12)	YES	UNI	NULL	
+annual_income	bigint	YES		NULL	
+city	varchar(100)	YES		NULL	
+country	varchar(100)	YES		NULL	
+created_at	datetime(6)	YES		NULL	
+customer_id	varchar(20)	YES	UNI	NULL	
+date_of_birth	date	YES		NULL	
+district	varchar(100)	YES		NULL	
+email	varchar(100)	NO	UNI	NULL	
+full_name	varchar(100)	NO		NULL	
+gender	varchar(10)	YES		NULL	
+house_no	varchar(100)	YES		NULL	
+last_login	datetime(6)	YES		NULL	
+nationality	varchar(50)	YES		NULL	
+occupation	varchar(100)	YES		NULL	
+password	varchar(250)	NO		NULL	
+phone	varchar(10)	NO	UNI	NULL	
+pincode	varchar(10)	YES		NULL	
+role	enum('ADMIN','USER')	NO		NULL	
+state	varchar(100)	YES		NULL	
+status	enum('APPROVED','BLOCKED','PENDING','REJECTED','SUSPENDED')	NO		NULL	
+street	varchar(150)	YES		NULL	
+updated_at	datetime(6)	YES		NULL	

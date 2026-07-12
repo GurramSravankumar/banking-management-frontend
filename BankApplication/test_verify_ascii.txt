@@ -1,0 +1,29 @@
+Trying login with admintest@skbank.com / password123...
+Login Success!
+
+--- Querying Customers ---
+Customers Status: 200
+Total Customers: 3
+Found target test user: Gurram Lakshmi Devi (ID: 5 )
+
+--- Querying Accounts ---
+Accounts Status: 200
+Total Accounts: 1
+First Account Info: {
+  id: 2,
+  accountNumber: '3870142139',
+  branch: 'Kadapa main Branch',
+  user: 'Gurram Sravankumar'
+}
+
+--- Updating Target Customer Profile ---
+Update Status: 200
+Updated Customer Profile details: {
+  fullName: 'Gurram Lakshmi Devi',
+  occupation: 'Senior Officer',
+  annualIncome: 999999,
+  status: 'APPROVED'
+}
+
+--- Re-Querying Customers list to verify persistence ---
+Persisted customer occupation in database: Senior Officer

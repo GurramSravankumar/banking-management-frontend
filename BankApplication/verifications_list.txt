@@ -1,0 +1,4 @@
+id	aadhaar_document_path	aadhaar_number	aadhaar_verified	email_verified	kyc_status	mobile_verified	pan_document_path	pan_number	pan_verified	profile_photo_path	verified_at	verified_by	user_id
+5	uploads\\aadhaar\\fa058476-7428-475f-9adc-5aae80007d11_WhatsApp Image 2026-07-08 at 8.35.47 AM (1).jpeg	NULL		\0	VERIFIED	\0	uploads\\pan\\3c4b77cc-92d7-4749-8881-ccab00b71b2a_WhatsApp Image 2026-07-08 at 8.35.47 AM.jpeg	NULL		uploads\\profile\\0d07fb91-5921-4d11-b8ce-e7221dab31bc_dark-screen-lord-venkateswara-4k-pypab4vz82b7ppbn.jpg	NULL	NULL	5
+6	uploads\\aadhaar\\dd9f0a02-c25e-4f3a-b91c-94717984579c_WhatsApp Image 2026-07-06 at 3.16.55 PM.jpeg	NULL		\0	VERIFIED	\0	uploads\\pan\\2353cb14-5457-408e-90ca-b4f52ad0047f_WhatsApp Image 2026-07-06 at 4.41.09 PM.jpeg	NULL		uploads\\profile\\fe33f648-8aa9-4be6-9705-ad2a9cd7afae_photo_1_imresizer.jpg	2026-07-08 09:21:43.511435	ADMIN	6
+7	NULL	NULL	\0	\0	PENDING	\0	NULL	NULL	\0	NULL	NULL	NULL	7

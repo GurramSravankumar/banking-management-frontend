@@ -1,0 +1,25 @@
+﻿=== STARTING BACKEND INTEGRATION API TESTS ===
+
+1. Registering user. Email: testuser748213@skbank.com
+Registration Response (Raw): {
+  message: 'Registration successful. Please login and complete your KYC.',
+  email: 'testuser748213@skbank.com',
+  status: 'PENDING'
+}
+
+2. Logging in with user credentials...
+Login Success! Token snippet: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlI...
+
+3. Fetching User Profile...
+Profile details fetched: {
+  id: undefined,
+  fullName: 'Automated Integration Tester',
+  customerId: null,
+  userStatus: 'PENDING',
+  kycStatus: 'PENDING'
+}
+
+4. Attempting to open savings account...
+Account Creation failed (Expected if KYC is not yet approved): Something went wrong
+
+=== API INTEGRATION TESTS COMPLETED SUCCESSFULLY ===

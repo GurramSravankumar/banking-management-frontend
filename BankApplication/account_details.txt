@@ -1,0 +1,2 @@
+id	account_number	account_status	account_type	balance	branch_name	closed_at	currency	ifsc_code	opened_at	user_id
+2	3870142139	ACTIVE	SAVINGS	0	Kadapa main Branch	NULL	INR	GSKA0009398	2026-07-08 09:21:43.522538	6

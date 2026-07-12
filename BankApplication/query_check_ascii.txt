@@ -1,0 +1,15 @@
+*************************** 1. row ***************************
+                   id: 5
+           kyc_status: REJECTED
+aadhaar_document_path: uploads\aadhaar\fa058476-7428-475f-9adc-5aae80007d11_WhatsApp Image 2026-07-08 at 8.35.47 AM (1).jpeg
+    pan_document_path: uploads\pan\3c4b77cc-92d7-4749-8881-ccab00b71b2a_WhatsApp Image 2026-07-08 at 8.35.47 AM.jpeg
+*************************** 2. row ***************************
+                   id: 6
+           kyc_status: UNDER_REVIEW
+aadhaar_document_path: uploads\aadhaar\dd9f0a02-c25e-4f3a-b91c-94717984579c_WhatsApp Image 2026-07-06 at 3.16.55 PM.jpeg
+    pan_document_path: uploads\pan\2353cb14-5457-408e-90ca-b4f52ad0047f_WhatsApp Image 2026-07-06 at 4.41.09 PM.jpeg
+*************************** 3. row ***************************
+                   id: 7
+           kyc_status: PENDING
+aadhaar_document_path: NULL
+    pan_document_path: NULL

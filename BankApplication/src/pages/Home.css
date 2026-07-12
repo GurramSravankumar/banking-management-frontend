@@ -1,0 +1,51 @@
+.home-page {
+    min-height: 100vh;
+    padding-top: 74px;
+    background: #f4f7fa;
+}
+
+.home-hero {
+    min-height: calc(100vh - 74px);
+    display: flex;
+    align-items: center;
+    padding: 48px 8%;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.92), rgba(15, 23, 42, 0.92)), url("../assets/hero.png") center / cover;
+    color: #ffffff;
+}
+
+.home-hero div {
+    max-width: 680px;
+}
+
+.home-hero h1 {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 18px;
+}
+
+.home-hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #dbeafe;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.hero-actions a {
+    padding: 12px 22px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.hero-actions .secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}

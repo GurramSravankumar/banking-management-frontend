@@ -1,0 +1,6 @@
+id	full_name	email	role	status
+5	Gurram Lakshmi Devi	gsravankumarjmd@gmail.com	ADMIN	APPROVED
+6	Gurram Sravankumar	gurrramsravankr@gmail.com	USER	APPROVED
+7	Admin Tester	admintest@skbank.com	ADMIN	APPROVED
+id	account_number	balance	user_id
+2	3870142139	0	6

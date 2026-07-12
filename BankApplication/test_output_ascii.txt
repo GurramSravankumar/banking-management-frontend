@@ -1,0 +1,86 @@
+Logging in as admin:  admintest@skbank.com
+Login Success! Token:  eyJhbGciOiJIUzI1NiJ9...
+
+=== Endpoint: /api/admin/kyc/pending ===
+Status: 200
+Type of response.data: object
+Is array: true
+Array length: 0
+
+=== Endpoint: /api/admin/customers ===
+Status: 200
+Type of response.data: object
+Is array: true
+Array length: 3
+First item: {
+  "id": 5,
+  "customerId": null,
+  "fullName": "Gurram Lakshmi Devi",
+  "email": "gsravankumarjmd@gmail.com",
+  "phone": "9492515863",
+  "aadhaarNumber": "608621105778",
+  "password": "$2a$10$lZd1FUNwhzpCYH89dFJiDezyfNf8HrlumEqZYc7cGzf8yPUKrl8CW",
+  "dateOfBirth": "1980-01-01",
+  "gender": "MALE",
+  "occupation": "House wife",
+  "annualIncome": 1,
+  "nationality": "Indian",
+  "houseNo": "4/266",
+  "street": "Nehru Nagar",
+  "city": "jammalamadugu",
+  "district": "Kadapa",
+  "state": "Andhra Pradesh",
+  "country": "India",
+  "pincode": "516434",
+  "role": "ADMIN",
+  "status": "APPROVED",
+  "lastLogin": null,
+  "createdAt": "2026-07-08T08:55:04.434088",
+  "updatedAt": "2026-07-08T08:55:04.434088",
+  "verification": {
+    "id": 5,
+    "aadhaarNumber": null,
+    "panNumber": null,
+    "aadhaarDocumentPath": "uploads\\aadhaar\\fa058476-7428-475f-9adc-5aae80007d11_WhatsApp Image 2026-07-08 at 8.35.47 AM (1).jpeg",
+    "panDocumentPath": "uploads\\pan\\3c4b77cc-92d7-4749-8881-ccab00b71b2a_WhatsApp Image 2026-07-08 at 8.35.47 AM.jpeg",
+    "profilePhotoPath": "uploads\\profile\\0d07fb91-5921-4d11-b8ce-e7221dab31bc_dark-screen-lord-venkateswara-4k-pypab4vz82b7ppbn.jpg",
+    "emailVerified": false,
+    "mobileVerified": false,
+    "aadhaarVerified": false,
+    "panVerified": false,
+    "kycStatus": "REJECTED",
+    "verifiedBy": null,
+    "verifiedAt": null
+  },
+  "accounts": [],
+  "beneficiaries": []
+}
+
+Error fetching /api/admin/accounts: 400 {
+  timestamp: '2026-07-08T09:25:24.5871692',
+  status: 400,
+  error: 'Bad Request',
+  message: 'Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]',
+  path: '/api/admin/accounts'
+}
+
+=== Endpoint: /api/admin/transactions ===
+Status: 200
+Type of response.data: object
+Is array: true
+Array length: 0
+
+=== Endpoint: /api/admin/audit-logs ===
+Status: 200
+Type of response.data: object
+Is array: true
+Array length: 2
+First item: {
+  "id": 2,
+  "action": "APPROVE_KYC",
+  "targetType": "USER",
+  "targetId": 6,
+  "actor": "gsravankumarjmd@gmail.com",
+  "details": "KYC approved and savings account created",
+  "createdAt": "2026-07-08T09:21:43.533731"
+}

@@ -1,0 +1,5 @@
+email	role	status
+gsravankumarjmd@gmail.com	ADMIN	APPROVED
+gurramsravankr@gmail.com	USER	APPROVED
+admintest@skbank.com	ADMIN	APPROVED
+dummy@example.com	USER	PENDING
