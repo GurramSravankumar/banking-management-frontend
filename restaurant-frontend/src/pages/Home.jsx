@@ -128,6 +128,9 @@ function Home({ user }) {
                             <strong>Overlapping Slots Checks:</strong> DineEase automatically validates table bookings to prevent double-booking the same table for identical date/time slots.
                         </li>
                         <li>
+                            <strong>Automatic Merging:</strong> If you book another reservation for the exact same date and time, DineEase will automatically merge your guests into a single larger table, if available!
+                        </li>
+                        <li>
                             <strong>Capacity Checks:</strong> The best-fit optimization allocates the smallest table capable of hosting your guest count to save larger spaces for bigger parties.
                         </li>
                         <li>
