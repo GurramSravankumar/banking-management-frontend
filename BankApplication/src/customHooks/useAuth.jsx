@@ -23,7 +23,7 @@ api.interceptors.response.use(
             localStorage.removeItem("status");
             localStorage.removeItem("kycStatus");
             localStorage.removeItem("customerId");
-            window.location.href = "/login";
+            window.location.href = import.meta.env.BASE_URL + "login";
         }
         return Promise.reject(error);
     }
