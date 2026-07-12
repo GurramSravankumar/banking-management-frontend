@@ -1,97 +1,166 @@
-# 🏦 SecureBank: Modern Banking Management System
+# 🏦 SecureBank: Enterprise Front-End Architecture
+
+A production-grade, highly-secured React Single Page Application (SPA) providing financial clients and bank administrators with a seamless, resilient, and instantly responsive banking dashboard. Engineered for 100% decoupling from the backend, the application relies on deeply integrated JWT inspection, client-side HashRouting algorithms, and Axios request interceptors to enforce granular access privileges dynamically at runtime.
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Live_Demo-Visit_Now-brightgreen?style=for-the-badge&logo=vercel" alt="Live Demo" />
   <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" alt="React" />
-  <img src="https://img.shields.io/badge/Bank_Security-RSA-orange?style=for-the-badge&logo=letsencrypt" alt="Security" />
   <img src="https://img.shields.io/badge/Vite-4.0-purple?style=for-the-badge&logo=vite" alt="Vite" />
+  <img src="https://img.shields.io/badge/Deployment-GitHub_Pages-green?style=for-the-badge&logo=githubpages" alt="GitHub Pages" />
+  <img src="https://img.shields.io/badge/Router-HashRouter-red?style=for-the-badge&logo=reactrouter" alt="Router" />
 </div>
 
-<br/>
+---
 
-A comprehensive financial management dashboard developed for both bank customers and administrative staff. Customers can view transaction histories, manage their profile, and execute transfers, while Administrators have sweeping controls over KYC approvals and systemic auditing.
+## 🌐 Live Demo
+
+* **Frontend Client:** [Launch Secure Dashboard](https://gurramsravankumar.github.io/banking-management-frontend/#/)
+* **Backend Origin:** [Render Cluster API](https://banking-management-system.onrender.com)
+* **API Base URL:** `https://banking-management-system.onrender.com/api`
 
 ---
 
-## ✨ Key Features
+## 📖 Project Overview
 
-| Feature | Description |
-| :--- | :--- |
-| **🛡️ Two-Tier Dashboards** | Separate, protected routing environments for Users and Administrators based on JWT claims. |
-| **💳 Seamless Transactions** | Real-time state management ensuring instantaneous visual updates for account transfers and limits. |
-| **🔐 KYC Approval Workflow** | Comprehensive Admin interface allowing operators to review, approve, or reject pending KYC documents. |
-| **📡 Axios interceptors** | Secure API communication layer automatically attaching authorization bearers to every request. |
-| **🗂️ Hash Routing** | Flawless SPA deployment to Github Pages ignoring cache mismatches via native hash routing constraints. |
+Modern financial applications require extreme resilience on the client side while mitigating CSRF and XSS injection vectors. Traditional server-side rendering introduces unnecessary overhead for administrative table manipulation. 
+
+**SecureBank Frontend** solves this by establishing strict isolation through the `useAuth` hook and `<ProtectedRoute>` component wrappers. Administrators can instantly approve KYC documents natively in their browser, triggering asynchronous Axios background commits (via interceptors), while customers experience fluid `HashRouter` transitions without triggering continuous browser reloads or 404 cache misses typical of native GitHub Pages deployments.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Features
 
-**Frontend Architecture:**
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
-![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+**Authentication & Authorization**
+* ✅ Centralized local-storage state mapping containing decoded structural JWT claims.
+* ✅ Automated Axios bearer injection intercepting every outbound `HTTP` request natively.
+* ✅ Absolute Route separation strictly guarding `/admin` URIs from standard User identities.
+
+**Customer Features**
+* ✅ Dynamic Profile Dashboard rendering real-time synchronized account metrics.
+* ✅ Seamless internal financial transfer simulations executing client-side limitation validations organically.
+* ✅ Localized KYC submission panels allowing dynamic `.blob` tracking uploads.
+
+**Admin Features**
+* ✅ Master `PendingKycPanel` grid filtering unstructured data streams asynchronously.
+* ✅ Forceful account approval and rejection switches firing mapped `PUT` override requests.
+* ✅ Universal analytical charts breaking down real-time active system thresholds.
+
+**Performance & Deployment**
+* ✅ Vite Hot-Module Replacement (HMR) pushing sub-millisecond compilation pipelines.
+* ✅ Native Github Pages deploy scripting utilizing cache-resistant Hash routing `#` limits avoiding complex proxy overrides.
 
 ---
 
-## 🌐 Deployment
+## 📸 Screenshots
 
-| Component | Platform | URL |
+*(Visuals of active deployments render beneath)*
+
+* **Home & Landing Portal:** `<!-- Insert URL Here -->`
+* **Secure Registration:** `<!-- Insert URL Here -->`
+* **Customer Dashboard:** `<!-- Insert URL Here -->`
+* **Admin Verification Interface:** `<!-- Insert URL Here -->`
+* **Transfer Executions:** `<!-- Insert URL Here -->`
+
+---
+
+## 🛠️ Technology Stack
+
+| Architecture Layer | Core Technology | Purpose |
 | :--- | :--- | :--- |
-| **Frontend Web App** | GitHub Pages | [Access Dashboard](https://gurramsravankumar.github.io/banking-management-frontend/#/login) |
-| **Security Layer** | JWT Roles | Stateless Token Auth |
+| **Component Engine** | React 18 | Declarative Functional execution |
+| **Bundler & Tooling**| Vite | Unbundled native ESM environment |
+| **Network Client** | Axios | Configurable HTTP Promise abstractions |
+| **Routing Protocol** | React Hash Router | Isolated native client-side navigation |
+| **Package Manager** | NPM | Ecosystem dependency isolation |
+| **Design Language** | Vanilla CSS3 / Tailwind | Cascading structural style layouts |
 
 ---
 
-## 🚀 Run Locally
+## 🧠 System Architecture
 
-**Prerequisites:**
-* Node.js 18+
-* Web Browser (Chrome/Edge/Firefox)
+**1. The Component Flow:**
+Initial HTTP rendering points directly towards `main.jsx` where the `<HashRouter>` mounts. The React virtual DOM establishes `<App />` and inherently filters pathways explicitly routing Users matching the active JWT configuration context.
 
-**Execution Commands:**
-```bash
-git clone https://github.com/GurramSravankumar/banking-management-frontend.git
-cd banking-management-frontend
-npm install
-npm run dev
-```
-*(Runs securely on `http://localhost:5173` locally)*
+**2. Axios Interceptors:**
+To strictly prevent unprotected REST executions, every component utilizing network activity references a singleton Axios instance. 
+Before making a request to the Java backend, the interceptor natively parses `localStorage.getItem("token")` and attaches `Authorization: Bearer <token>` to the outbound header. If 401 Unauthorized returns, the interceptor automatically forces a redirect to `/login`.
+
+**3. The Role Guard:**
+`<ProtectedRoute>` components mathematically check the target requirement (e.g. `role="ADMIN"`) directly against the local claims string. Violations push a generic React `<Navigate to="/" replace />` action instantly clearing the threat vector.
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-BankApplication/
+SecureBank/
 ├── src/
-│   ├── admin/                     # Administrator Protected Pages
-│   │   ├── AdminDashboard.jsx
-│   │   └── PendingKycPanel.jsx    # Admin KYC control systems
+│   ├── admin/                     # Administrator Restricted Pages
+│   │   ├── AdminDashboard.jsx     # Master control UI
+│   │   └── PendingKycPanel.jsx    # Real-time data tables
 │   │
-│   ├── components/                # Reusable UI Architecture
-│   │   ├── DataTable.jsx          # Sortable Financial Tables
-│   │   ├── Header.jsx             # Navigation & Branding
-│   │   └── UserDashboard/         # Modular user sub-panels
+│   ├── components/                # Application Wide Components
+│   │   ├── Header.jsx             # Active stateless navigation
+│   │   ├── DataTable.jsx          # Sortable scalable data grids
+│   │   └── UserDashboard/         # Componentized customer views
+│   │       └── ProfilePanel.jsx   # Encapsulated state panels
 │   │
-│   ├── customHooks/               # React Custom logic encapsulation
-│   │   └── useAuth.jsx            # Token validations
+│   ├── pages/                     # Public routing paths
+│   │   ├── Home.jsx               # Entry-point advertisement
+│   │   ├── Login.jsx              # Token verification trigger
+│   │   └── Register.jsx           # Spring API User generator
 │   │
-│   ├── pages/                     # Primary Routed Interfaces
-│   │   ├── Home.jsx               # Landing Platform
-│   │   ├── Login.jsx              # Secured Entry Point
-│   │   ├── Register.jsx           # Account Creation
-│   │   └── UserDashboard.jsx      # Financial Overview
+│   ├── customHooks/               # Modular logic encapsulations
+│   │   └── useAuth.jsx            # Token inspection logic
 │   │
 │   ├── App.jsx                    # Routing configuration wrapper
-│   └── main.jsx                   # Vite Entry (HashRouter mounted)
-└── package.json                   # Dependency & Build scripts
+│   └── main.jsx                   # Vite ROOT Mount (HashRouter)
+└── package.json                   # Dependency & GitHub deploy scripts
 ```
 
 ---
 
-## 🔮 Future Improvements
-* **WebSocket Live Markets:** Implementing live stock and exchange rate tickers connected via WSS.
-* **Biometric Auth:** Introducing WebAuthn passkey specifications allowing FaceID and Windows Hello logins.
-* **Financial Data Export:** Allow users to instantly generate localized PDF and CSV tax reports natively entirely on the client side using `.blob()` architecture.
+## 🚨 Security & Validation
+
+* **Token Interception:** Statically injecting tokens natively completely shields API payloads from brute force access without physical DOM context limits.
+* **Component-Level Checking:** Invalid configurations physically fail to mount to the DOM, limiting generic users from observing the native XML payload of an administrative portal natively rendering null trees.
+* **Client Validation:** Pre-verifying transfer limitations (e.g., stopping users from requesting amounts > localized account balance) eliminating wasted, unnecessary Java processing network round-trips entirely.
+
+---
+
+## 🖥️ Local Installation Guide
+
+**Prerequisite System Checks:**
+1. Git CLI installed
+2. Node 18+ runtime architecture active
+3. Web Browser
+
+**Initial Checkout:**
+```bash
+git clone https://github.com/GurramSravankumar/banking-management-frontend.git
+cd banking-management-frontend
+```
+
+**Boot Engine:**
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🔮 Future Enhancements
+
+* **State Management via Redux Toolkit:** Transitioning localized prop drilling explicitly towards a centralized persistent Redux node architecture dynamically caching complex KYC payloads natively.
+* **Biometric Auth Integration:** Invoking the Web Authentication API allowing native Windows Hello and Apple FaceID passkey integrations explicitly generating local keystore asymmetric logins directly onto the bank server endpoints.
+
+---
+
+## 💼 Author
+
+**[Your Name]** 
+* Java Full Stack Developer
+* 🏢 **LinkedIn:** [Insert Link]
+* 🐙 **GitHub:** [@GurramSravankumar](https://github.com/GurramSravankumar)
+
+## 📄 License
+MIT Open Source Configuration.
