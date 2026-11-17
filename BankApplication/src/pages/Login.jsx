@@ -128,16 +128,22 @@ function Login() {
                                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                     <span
                                         style={{ cursor: "pointer", textDecoration: "underline", color: "#2563eb" }}
-                                        onClick={() => handleCopy("gurramsravankr@gmail.com", "User Email")}
+                                        onClick={() => {
+                                            setCredentials({ email: "gurramsravankr@gmail.com", password: "Sravan@9398" });
+                                            handleCopy("gurramsravankr@gmail.com", "User Email");
+                                        }}
                                     >
                                         gurramsravankr@gmail.com (User)
                                     </span>
-                                    <span>pass: password123</span>
+                                    <span>pass: Sravan@9398</span>
                                 </div>
                                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                     <span
                                         style={{ cursor: "pointer", textDecoration: "underline", color: "#2563eb" }}
-                                        onClick={() => handleCopy("admintest@skbank.com", "Admin Email")}
+                                        onClick={() => {
+                                            setCredentials({ email: "admintest@skbank.com", password: "password123" });
+                                            handleCopy("admintest@skbank.com", "Admin Email");
+                                        }}
                                     >
                                         admintest@skbank.com (Admin)
                                     </span>
@@ -146,7 +152,10 @@ function Login() {
                                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                                     <span
                                         style={{ cursor: "pointer", textDecoration: "underline", color: "#2563eb" }}
-                                        onClick={() => handleCopy("gsravankumarjmd@gmail.com", "Admin Email")}
+                                        onClick={() => {
+                                            setCredentials({ email: "gsravankumarjmd@gmail.com", password: "password123" });
+                                            handleCopy("gsravankumarjmd@gmail.com", "Admin Email");
+                                        }}
                                     >
                                         gsravankumarjmd@gmail.com (Admin)
                                     </span>

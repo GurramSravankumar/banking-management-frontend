@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "beneficiaryName": "Priya Sharma",
+    "nickname": "Priya Landlady",
+    "accountNumber": "SB654321098",
+    "ifscCode": "HDFC0001234",
+    "bankName": "HDFC Bank"
+  },
+  {
+    "id": 2,
+    "beneficiaryName": "Ramesh Kumar Gurram",
+    "nickname": "Ramesh Brother",
+    "accountNumber": "SB876543210",
+    "ifscCode": "SBIN0005678",
+    "bankName": "State Bank of India"
+  },
+  {
+    "id": 3,
+    "beneficiaryName": "CloudTech Solutions Pvt Ltd",
+    "nickname": "CloudTech Vendor",
+    "accountNumber": "CA112233445",
+    "ifscCode": "ICIC0009876",
+    "bankName": "ICICI Bank"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "referenceNumber": "TXN939854001",
+    "transactionTitle": "Salary Credit",
+    "fromAccountNumber": "CORP-PAYROLL-HDFC",
+    "toAccountNumber": "SB939800101",
+    "beneficiaryNickname": "Employer Payroll",
+    "amount": 125000.00,
+    "transactionType": "CREDIT",
+    "status": "SUCCESS",
+    "remarks": "Monthly Salary for October",
+    "transactionTime": "2026-10-31T10:15:00",
+    "balanceAfter": 184500.00
+  },
+  {
+    "id": 2,
+    "referenceNumber": "TXN939854002",
+    "transactionTitle": "Fund Transfer",
+    "fromAccountNumber": "SB939800101",
+    "toAccountNumber": "SB654321098",
+    "beneficiaryNickname": "Priya Sharma",
+    "amount": 15000.00,
+    "transactionType": "DEBIT",
+    "status": "SUCCESS",
+    "remarks": "Rent payment",
+    "transactionTime": "2026-11-05T14:30:00",
+    "balanceAfter": 169500.00
+  },
+  {
+    "id": 3,
+    "referenceNumber": "TXN939854003",
+    "transactionTitle": "Electricity Bill Payment",
+    "fromAccountNumber": "SB939800101",
+    "toAccountNumber": "TSSPDCL-BILL-DESK",
+    "beneficiaryNickname": "Electricity Board",
+    "amount": 3450.00,
+    "transactionType": "DEBIT",
+    "status": "SUCCESS",
+    "remarks": "Power utility bill",
+    "transactionTime": "2026-11-08T09:45:00",
+    "balanceAfter": 166050.00
+  },
+  {
+    "id": 4,
+    "referenceNumber": "TXN939854004",
+    "transactionTitle": "Client Project Milestone",
+    "fromAccountNumber": "CLI-US-TECH-WIRE",
+    "toAccountNumber": "CA939800202",
+    "beneficiaryNickname": "Client Wire",
+    "amount": 250000.00,
+    "transactionType": "CREDIT",
+    "status": "SUCCESS",
+    "remarks": "Consulting project milestone invoice 104",
+    "transactionTime": "2026-11-12T16:20:00",
+    "balanceAfter": 642000.50
+  },
+  {
+    "id": 5,
+    "referenceNumber": "TXN939854005",
+    "transactionTitle": "Quarterly Savings Interest",
+    "fromAccountNumber": "BANK-INT-SYSTEM",
+    "toAccountNumber": "SB939800101",
+    "beneficiaryNickname": "Bank Interest",
+    "amount": 1845.00,
+    "transactionType": "CREDIT",
+    "status": "SUCCESS",
+    "remarks": "Savings Account Interest Auto-credit",
+    "transactionTime": "2026-11-15T00:01:00",
+    "balanceAfter": 184500.00
+  }
+]

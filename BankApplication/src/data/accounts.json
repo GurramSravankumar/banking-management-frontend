@@ -1,0 +1,29 @@
+[
+  {
+    "id": 101,
+    "accountNumber": "SB939800101",
+    "accountType": "SAVINGS",
+    "balance": 184500.00,
+    "branchName": "Banjara Hills Branch",
+    "status": "ACTIVE",
+    "createdAt": "2026-01-15T09:30:00"
+  },
+  {
+    "id": 102,
+    "accountNumber": "CA939800202",
+    "accountType": "CURRENT",
+    "balance": 642000.50,
+    "branchName": "Cyberabad Tech Branch",
+    "status": "ACTIVE",
+    "createdAt": "2026-02-10T14:20:00"
+  },
+  {
+    "id": 103,
+    "accountNumber": "FD939800303",
+    "accountType": "FIXED_DEPOSIT",
+    "balance": 500000.00,
+    "branchName": "Banjara Hills Branch",
+    "status": "ACTIVE",
+    "createdAt": "2026-03-01T11:00:00"
+  }
+]

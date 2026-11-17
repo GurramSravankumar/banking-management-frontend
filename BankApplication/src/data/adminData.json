@@ -1,0 +1,175 @@
+{
+  "pendingKyc": [
+    {
+      "id": 10,
+      "email": "vijay.verma@example.com",
+      "fullName": "Vijay Verma",
+      "phone": "9812345670",
+      "aadhaarNumber": "4567 8901 2345",
+      "panNumber": "ABCDE1234F",
+      "aadhaarDocument": "uploads/aadhaar_sample.pdf",
+      "panDocument": "uploads/pan_sample.pdf",
+      "profilePhoto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
+      "submittedAt": "2026-11-16T12:00:00"
+    },
+    {
+      "id": 11,
+      "email": "ananya.patel@example.com",
+      "fullName": "Ananya Patel",
+      "phone": "9723456781",
+      "aadhaarNumber": "8901 2345 6789",
+      "panNumber": "FGHIJ5678K",
+      "aadhaarDocument": "uploads/aadhaar_sample.pdf",
+      "panDocument": "uploads/pan_sample.pdf",
+      "profilePhoto": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
+      "submittedAt": "2026-11-16T15:30:00"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "customerId": "CUST-939854",
+      "fullName": "Gurram Sravankumar",
+      "email": "gurramsravankr@gmail.com",
+      "phone": "9398547890",
+      "userStatus": "ACTIVE",
+      "kycStatus": "APPROVED",
+      "accountsCount": 3,
+      "totalBalance": 1326500.50,
+      "createdAt": "2026-01-15T09:30:00"
+    },
+    {
+      "id": 2,
+      "customerId": "CUST-100201",
+      "fullName": "Rahul Deshmukh",
+      "email": "rahul.deshmukh@example.com",
+      "phone": "9845123654",
+      "userStatus": "ACTIVE",
+      "kycStatus": "APPROVED",
+      "accountsCount": 1,
+      "totalBalance": 85000.00,
+      "createdAt": "2026-02-12T11:20:00"
+    },
+    {
+      "id": 3,
+      "customerId": "CUST-100202",
+      "fullName": "Sneha Reddy",
+      "email": "sneha.reddy@example.com",
+      "phone": "9901234567",
+      "userStatus": "ACTIVE",
+      "kycStatus": "PENDING",
+      "accountsCount": 0,
+      "totalBalance": 0.00,
+      "createdAt": "2026-03-05T14:10:00"
+    }
+  ],
+  "accounts": [
+    {
+      "id": 101,
+      "accountNumber": "SB939800101",
+      "accountType": "SAVINGS",
+      "customerName": "Gurram Sravankumar",
+      "balance": 184500.00,
+      "branchName": "Banjara Hills Branch",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 102,
+      "accountNumber": "CA939800202",
+      "accountType": "CURRENT",
+      "customerName": "Gurram Sravankumar",
+      "balance": 642000.50,
+      "branchName": "Cyberabad Tech Branch",
+      "status": "ACTIVE"
+    },
+    {
+      "id": 104,
+      "accountNumber": "SB100201104",
+      "accountType": "SAVINGS",
+      "customerName": "Rahul Deshmukh",
+      "balance": 85000.00,
+      "branchName": "Madhapur Branch",
+      "status": "ACTIVE"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "referenceNumber": "TXN939854001",
+      "transactionTitle": "Salary Credit",
+      "fromAccountNumber": "CORP-PAYROLL-HDFC",
+      "toAccountNumber": "SB939800101",
+      "amount": 125000.00,
+      "transactionType": "CREDIT",
+      "status": "SUCCESS",
+      "transactionTime": "2026-10-31T10:15:00"
+    },
+    {
+      "id": 2,
+      "referenceNumber": "TXN939854002",
+      "transactionTitle": "Fund Transfer",
+      "fromAccountNumber": "SB939800101",
+      "toAccountNumber": "SB654321098",
+      "amount": 15000.00,
+      "transactionType": "DEBIT",
+      "status": "SUCCESS",
+      "transactionTime": "2026-11-05T14:30:00"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": 1,
+      "action": "LOGIN_SUCCESS",
+      "performedBy": "gurramsravankr@gmail.com",
+      "details": "User logged in successfully via Web portal",
+      "ipAddress": "106.51.24.18",
+      "timestamp": "2026-11-17T05:50:00"
+    },
+    {
+      "id": 2,
+      "action": "KYC_VERIFICATION",
+      "performedBy": "admin@skbank.com",
+      "details": "KYC Approved for CUST-939854 (Gurram Sravankumar)",
+      "ipAddress": "14.139.12.55",
+      "timestamp": "2026-11-15T16:20:00"
+    }
+  ],
+  "loans": [
+    {
+      "id": 1,
+      "loanId": "LN-2026-939801",
+      "customerName": "Gurram Sravankumar",
+      "loanType": "HOME_LOAN",
+      "amount": 2500000,
+      "interestRate": 8.5,
+      "termMonths": 120,
+      "emiAmount": 31050,
+      "status": "APPROVED",
+      "createdAt": "2025-06-15T11:00:00"
+    },
+    {
+      "id": 2,
+      "loanId": "LN-2026-939802",
+      "customerName": "Gurram Sravankumar",
+      "loanType": "PERSONAL",
+      "amount": 300000,
+      "interestRate": 11.5,
+      "termMonths": 24,
+      "emiAmount": 14050,
+      "status": "APPROVED",
+      "createdAt": "2026-01-10T10:00:00"
+    },
+    {
+      "id": 3,
+      "loanId": "LN-2026-100203",
+      "customerName": "Sneha Reddy",
+      "loanType": "EDUCATION",
+      "amount": 800000,
+      "interestRate": 9.0,
+      "termMonths": 60,
+      "emiAmount": 16600,
+      "status": "PENDING",
+      "createdAt": "2026-11-16T18:00:00"
+    }
+  ]
+}
